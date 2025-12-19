@@ -1,4 +1,4 @@
 # games
 Interface voor games
 
-- [Mini Ping Pong](minipingpong)
+- [Mini Ping Pong](https://fdnd.github.io/games/minipingpong/)
