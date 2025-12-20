@@ -4,6 +4,9 @@ var main = document.querySelector('main')
 var round1 = document.querySelector('#round1')
 var round2 = document.querySelector('#round2')
 var round3 = document.querySelector('#round3')
+var buttonText = "Start"
+var buttonTextClose = "x"
+
 // console.log(round1)
 
 //init add all hover and click events
@@ -31,10 +34,10 @@ function removeAllHovers(){
 //start round, add active class
 function startRound(){
     main.classList.add(this.parentElement.id+"-active") //add active round class
-    removeAllHovers(); //remove  hover classes
-    removeEvents();  //remove hover events
+    removeAllHovers() //remove  hover classes
+    removeEvents()  //remove hover events
     this.classList.add("close") //change button appearance, add class close to button
-    this.innerHTML = "x" //change button label
+    this.innerHTML = buttonTextClose //change button label
     this.parentElement.querySelector(".start").classList.remove("hide") //show content in active section
     this.addEventListener("click",resetRound) //new button click event
 }
@@ -42,7 +45,7 @@ function startRound(){
 function resetRound(){
     main.classList.remove(this.parentElement.id+"-active")
     this.classList.remove("close")
-    this.innerHTML = "Start"
+    this.innerHTML = buttonText
     this.parentElement.querySelector(".start").classList.add("hide")
     this.removeEventListener("click",resetRound) //remove button click event
     init() //call init function to start over
