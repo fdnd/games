@@ -67,17 +67,21 @@ section time{
 section p{
     /* max-width: 30rem; */
 }
-section button{
+section a{
     cursor: pointer;
     background: var(--buttoncolor);
+    color: var(--buttoncolor);
     font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
     width: 5em;
     padding: 0.2em;
     border: 1px black solid;
     display: block;
     transition: all 400ms;
 }
-section button:hover{
+section a:hover{
     background: linear-gradient(110deg, red, orange, yellow, green, blue, purple);
     font-weight: bolder;
     transform: scale(1.1);
@@ -93,9 +97,12 @@ section button:hover{
 .start{
     
 }
-button.close{
+.rules{
+
+}
+.close{
     position: absolute;
-    top: 2.2em;
+    top: 2.1em;
     right: 1.8em;
     width: 1.3em;
     height: 1.3em;
@@ -104,15 +111,15 @@ button.close{
     color: var(--dark);
     border-radius: var(--small-radius);
     padding: 0;
-}
-button.close:hover{
-    transform: none;
-    font-weight: normal;
-    background: var(--dark);
-    color: var(--grey);
-    cursor: pointer;
-}
 
+    &:hover{
+        transform: none;
+        font-weight: normal;
+        background: var(--dark);
+        color: var(--grey);
+        cursor: pointer;
+    }
+}
 /* sections */
 #round1 {
     background: var(--purple);
