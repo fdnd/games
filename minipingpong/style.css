@@ -1,4 +1,4 @@
-:root {
+html {
     --dark: rgb(33,33,33);
     --grey: #ECECEC;
     --purple: #A675F5;
@@ -8,17 +8,13 @@
     --yellow: #FFFC86;
     --radius: 1.5rem;
     --small-radius: 0.5rem;
-}
 
-html {
     background: var(--dark);
-    color: var(--dark);
+    /* color: var(--dark); */
     margin: 0em;
     padding: 1em;
     box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
-    font-size: 1.2em;
 }
 
 body {
@@ -27,6 +23,8 @@ body {
     border-radius: var(--radius);
     color: var(--color);
     font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.2em;
     height: 90vh;
 }
 
@@ -39,7 +37,6 @@ h1{
 }
 h1+p{
 }
-
 
 main {
     display: grid;
@@ -63,8 +60,9 @@ section time{
     /* display: block; */
     background: var(--dark);
     border-radius: var(--small-radius);
-    padding: 0 0.5em;
-    color: var(--grey)
+    padding: 0.2em 0.8em;
+    color: var(--grey);
+    font-size: 0.8em;
 }
 section p{
     /* max-width: 30rem; */
@@ -97,20 +95,21 @@ section button:hover{
 }
 button.close{
     position: absolute;
-    top: 2em;
-    right: 1em;
+    top: 2.2em;
+    right: 1.8em;
     width: 1.3em;
     height: 1.3em;
-    background: var(--dark);
-    border-radius: var(--small-radius);
-    padding: 0;
-    color: var(--grey);
     font-size: 1em;
-}
-button.close:hover{
     background: none;
     color: var(--dark);
+    border-radius: var(--small-radius);
+    padding: 0;
+}
+button.close:hover{
     transform: none;
+    font-weight: normal;
+    background: var(--dark);
+    color: var(--grey);
     cursor: pointer;
 }
 
@@ -168,7 +167,7 @@ button.close:hover{
 .round1-hover{
   grid-template-columns: 1.5fr 1fr 1fr;
     #round1{
-        font-size: 1.3em;
+        font-size: 130%;
         /* padding: 2rem; */
         /* margin: 0 3rem; */
     }
@@ -177,7 +176,7 @@ button.close:hover{
 .round2-hover{
   grid-template-columns: 1fr 1.5fr 1fr;
     #round2{
-        font-size: 1.3em;
+        font-size: 130%;
         /* padding: 2rem; */
         /* margin: 0 3rem; */
     }
@@ -186,7 +185,7 @@ button.close:hover{
     grid-template-columns: 1fr 1fr 1.5fr;
   
     #round3{
-        font-size: 1.3em;
+        font-size: 130%;
         /* padding: 2rem; */
         /* margin: 0 3rem; */
     }
