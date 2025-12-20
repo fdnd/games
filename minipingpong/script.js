@@ -7,8 +7,6 @@ var round3 = document.querySelector('#round3')
 var buttonText = "Start"
 var buttonTextClose = "x"
 
-// console.log(round1)
-
 //init add all hover and click events
 function init(){
     round1.addEventListener("mouseover",hover)
@@ -58,9 +56,18 @@ function removeEvents(){
     round2.removeEventListener("mouseout",removeAllHovers)
     round3.removeEventListener("mouseover",hover)
     round3.removeEventListener("mouseout",removeAllHovers)
-    // round1.replaceWith(round1.cloneNode(true))
-    // round2.replaceWith(round2.cloneNode(true))
-    // round3.replaceWith(round3.cloneNode(true))
 }
 
 init()
+
+
+
+/* Learned:
+
+replace element with cone removes all listeners...
+    round1.replaceWith(round1.cloneNode(true))
+    round2.replaceWith(round2.cloneNode(true))
+    round3.replaceWith(round3.cloneNode(true))
+
+
+*/
