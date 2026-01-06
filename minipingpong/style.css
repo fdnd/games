@@ -164,26 +164,33 @@ section {
 }
 
 /* hover classes on sections */
-.round1-hover {
-    grid-template-columns: 1.5fr 1fr 1fr;
-    #round1 {
-        font-size: 130%;
+.round1-hover{
+  grid-template-columns: 1.5fr 1fr 1fr;
+    #round1{
+        font-size: calc(1.5/1 * 100%);
+        /* font-size: 150%; */
         /* padding: 2rem; */
+        /* padding: calc(1.5/1 * 2em); */
         /* margin: 0 3rem; */
     }
 }
-.round2-hover {
-    grid-template-columns: 1fr 1.5fr 1fr;
-    #round2 {
-        font-size: 130%;
+.round2-hover{
+  grid-template-columns: 1fr 1.5fr 1fr;
+    #round2{
+        font-size: calc(1.5/1 * 100%);
+        /* font-size: 150%; */
+        /* font-size: calc(1.5/1 * 100%); */
         /* padding: 2rem; */
         /* margin: 0 3rem; */
     }
 }
 .round3-hover {
     grid-template-columns: 1fr 1fr 1.5fr;
-    #round3 {
-        font-size: 130%;
+  
+    #round3{
+        font-size: calc(1.5/1 * 100%);
+        /* font-size: calc(1.5/1); */
+        /* font-size: 130%; */
         /* padding: 2rem; */
         /* margin: 0 3rem; */
     }
