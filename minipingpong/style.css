@@ -87,11 +87,11 @@ section {
     opacity: 1;
 }
 .hide {
-   opacity: 0;
-   height: 0;
+    opacity: 0;
+    height: 0;
 }
 .rules {
-
+    /* margin-top: -1em; */
 }
 .close {
     position: absolute;
