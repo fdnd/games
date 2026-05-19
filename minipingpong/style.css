@@ -76,7 +76,7 @@ section {
         display: block;
         transition: all 400ms;
 
-        &:hover {
+        &:hover,&:focus  {
             transform: scale(1.1);
             font-weight: bolder;
             background: linear-gradient(110deg, red, orange, yellow, green, blue, purple);
